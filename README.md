@@ -1,8 +1,17 @@
-# EverythingSkill - 项目总结
+# EverythingSkill
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Aoye-3/Everything-toSkill)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange)](https://github.com/Aoye-3/Everything-toSkill/releases)
+
+**Transform GitHub projects and local folders into AI-accessible Skills**
 
 ## 项目概述
 
 EverythingSkill是一个创新的工具，能够将GitHub项目或本地文档文件夹转换为AI可用的Skills。它基于对OpenAI SKILL创建指南和实际项目（如colleague-skill）的深入分析，实现了智能的项目分析和Skill生成功能。
+
+**GitHub仓库**: [https://github.com/Aoye-3/Everything-toSkill](https://github.com/Aoye-3/Everything-toSkill)
 
 ## 设计理念
 
@@ -449,10 +458,33 @@ EverythingSkill 参考和借鉴了以下项目：
 3. **引用要求**: 使用第三方内容需遵守原始许可证
 4. **归属要求**: 适当引用和归属原始项目
 
+### GitHub贡献指南
+欢迎通过GitHub贡献代码！请遵循以下步骤：
+
+1. **Fork仓库**: 点击GitHub页面右上角的"Fork"按钮
+2. **克隆仓库**: `git clone https://github.com/YOUR-USERNAME/Everything-toSkill.git`
+3. **创建分支**: `git checkout -b feature/your-feature-name`
+4. **提交更改**: `git commit -m "Add your feature description"`
+5. **推送到GitHub**: `git push origin feature/your-feature-name`
+6. **创建Pull Request**: 在GitHub仓库页面创建PR
+
+### 问题报告和功能请求
+- **问题报告**: 在GitHub Issues中报告问题
+- **功能请求**: 提交功能请求或改进建议
+- **文档贡献**: 帮助改进文档和示例
+
+### 快速链接
+- **GitHub仓库**: [https://github.com/Aoye-3/Everything-toSkill](https://github.com/Aoye-3/Everything-toSkill)
+- **问题跟踪**: [GitHub Issues](https://github.com/Aoye-3/Everything-toSkill/issues)
+- **讨论区**: [GitHub Discussions](https://github.com/Aoye-3/Everything-toSkill/discussions)
+
 ---
 
 *EverythingSkill - 让每个项目都能成为AI的技能*
 
+**增强而非替代，自主掌控知识**
+
+**GitHub**: [Aoye-3/Everything-toSkill](https://github.com/Aoye-3/Everything-toSkill)  
 **许可证**: MIT  
 **版权**: © 2026 EverythingSkill Contributors  
 **版本**: 1.0.0  

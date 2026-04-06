@@ -1,6 +1,9 @@
 ---
 name: everything-skill
 description: Convert GitHub projects or local document folders into usable Skills. Use when user has a GitHub repository or local folder with valuable content that should be transformed into an AI-accessible Skill for easier integration and usage within the IDE.
+github: https://github.com/Aoye-3/Everything-toSkill
+license: MIT
+version: 1.0.0
 ---
 
 # EverythingSkill
