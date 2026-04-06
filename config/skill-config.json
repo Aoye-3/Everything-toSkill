@@ -1,0 +1,135 @@
+{
+  "skill_name": "everything-skill",
+  "version": "1.0.0",
+  "description": "Convert GitHub projects or local document folders into usable Skills",
+  "author": "EverythingSkill Generator",
+  "created_at": "2026-04-06T21:45:00Z",
+  "last_updated": "2026-04-06T21:45:00Z",
+  
+  "capabilities": {
+    "github_conversion": true,
+    "folder_conversion": true,
+    "automatic_analysis": true,
+    "template_based_generation": true,
+    "project_type_detection": true
+  },
+  
+  "supported_project_types": [
+    {
+      "type": "tool",
+      "description": "Command-line tools, libraries, SDKs",
+      "template": "tool-template.md",
+      "examples": ["markdown-formatter", "cli-utility", "api-wrapper"]
+    },
+    {
+      "type": "resource",
+      "description": "Documentation collections, code examples, design resources",
+      "template": "resource-template.md",
+      "examples": ["awesome-design-md", "documentation-set", "code-samples"]
+    },
+    {
+      "type": "application",
+      "description": "Web apps, desktop applications, services",
+      "template": "app-template.md",
+      "examples": ["web-application", "desktop-app", "microservice"]
+    },
+    {
+      "type": "framework",
+      "description": "Development frameworks, boilerplates",
+      "template": "framework-template.md",
+      "examples": ["react-boilerplate", "api-framework", "starter-kit"]
+    }
+  ],
+  
+  "analysis_settings": {
+    "github": {
+      "api_timeout": 30,
+      "max_retries": 3,
+      "rate_limit_wait": 60,
+      "default_branch": "main",
+      "include_readme": true,
+      "include_file_structure": true,
+      "max_structure_depth": 4
+    },
+    "folder": {
+      "max_file_size_mb": 10,
+      "excluded_dirs": [".git", ".github", "__pycache__", "node_modules", ".venv", "venv"],
+      "excluded_files": [".DS_Store", "thumbs.db"],
+      "max_files_to_analyze": 1000,
+      "readme_patterns": ["^readme", "^README", "^Readme"]
+    }
+  },
+  
+  "generation_settings": {
+    "default_output_dir": "./generated-skills",
+    "overwrite_existing": false,
+    "create_backup": true,
+    "include_original_content": true,
+    "generate_examples": true,
+    "generate_configs": true,
+    "generate_scripts": true,
+    "skill_name_format": "kebab-case",
+    "auto_detect_language": true
+  },
+  
+  "templates": {
+    "tool": {
+      "file": "tool-template.md",
+      "description": "Template for tool and library projects",
+      "required_sections": ["installation", "usage", "examples", "configuration"]
+    },
+    "resource": {
+      "file": "resource-template.md",
+      "description": "Template for resource collection projects",
+      "required_sections": ["catalog", "search", "usage", "contribution"]
+    },
+    "application": {
+      "file": "app-template.md",
+      "description": "Template for application projects",
+      "required_sections": ["deployment", "configuration", "usage", "api"]
+    },
+    "framework": {
+      "file": "framework-template.md",
+      "description": "Template for framework projects",
+      "required_sections": ["setup", "architecture", "examples", "extending"]
+    }
+  },
+  
+  "scripts": {
+    "main": "everything-skill.py",
+    "analyze_github": "analyze-github.py",
+    "analyze_folder": "analyze-folder.py",
+    "generate_skill": "generate-skill.py",
+    "dependencies": ["requests", "python-dotenv"]
+  },
+  
+  "documentation": {
+    "skill_md_template": "SKILL.md",
+    "readme_template": "README-SKILL.md",
+    "example_templates": ["basic-usage.md", "advanced-features.md"],
+    "config_templates": ["skill-config.json", "config-template.json"]
+  },
+  
+  "validation": {
+    "required_files": ["SKILL.md"],
+    "recommended_files": ["scripts/", "config/", "examples/"],
+    "max_skill_size_mb": 50,
+    "min_description_length": 50,
+    "max_description_length": 500
+  },
+  
+  "integration": {
+    "ide_compatible": true,
+    "skill_format": "standard",
+    "auto_discovery": true,
+    "reload_required": true,
+    "test_command": "python scripts/everything-skill.py --help"
+  },
+  
+  "maintenance": {
+    "update_frequency": "monthly",
+    "backup_before_update": true,
+    "version_check_url": "https://api.github.com/repos/example/everything-skill/releases/latest",
+    "changelog_location": "CHANGELOG.md"
+  }
+}

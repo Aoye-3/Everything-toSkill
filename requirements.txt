@@ -1,0 +1,30 @@
+# EverythingSkill 依赖包
+
+# 核心依赖
+requests>=2.31.0
+PyGithub>=2.1.1
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+markdown>=3.5.1
+
+# 开发依赖
+pytest>=7.4.0
+black>=23.11.0
+flake8>=6.1.0
+mypy>=1.7.0
+pytest-cov>=4.1.0
+
+# 可选依赖（用于特定功能）
+beautifulsoup4>=4.12.0  # HTML解析
+lxml>=4.9.0            # XML/HTML处理
+pandas>=2.0.0          # 数据分析
+numpy>=1.24.0          # 数值计算
+tqdm>=4.66.0           # 进度条
+
+# 测试环境
+pytest-mock>=3.12.0
+coverage>=7.3.0
+
+# 文档生成
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
